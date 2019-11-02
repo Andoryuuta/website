@@ -4,3 +4,6 @@
 [submodule "themes/hugo-refresh"]
 	path = themes/hugo-refresh
 	url = https://github.com/PippoRJ/hugo-refresh.git
+[submodule "public"]
+	path = public
+	url = https://github.com/Andoryuuta/andoryuuta.github.io
