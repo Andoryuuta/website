@@ -6,10 +6,10 @@
 {{ $style := $sass | resources.ToCSS }}
 {{ $style = $style | resources.Fingerprint }}
 
-<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" >
 
 {{ $printStyle := resources.Get "scss/print.scss" | toCSS $options | fingerprint }}
-<link rel="stylesheet" href="{{ $printStyle.RelPermalink }}" integrity="{{ $printStyle.Data.Integrity }}" media="print">
+<link rel="stylesheet" href="{{ $printStyle.RelPermalink }}" media="print">
 
 {{ with .Site.Params.toc }}
 {{ if eq . "hugo" }}
