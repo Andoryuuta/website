@@ -1,7 +1,6 @@
 ---
 title: "A Look at Angelic47's PyProtect"
 date: 2019-11-02T12:49:29-07:00
-draft: true
 summary: "A dive into the inner-workings of Angelic47's Python 2.7 protector, PyProtect."
 ---
 
@@ -1024,7 +1023,7 @@ for i in xrange(5):
 ```
 
 ## Postface
-### Final script
+The finished unpacker script is available 
 ### Resources
 * ["PyProtect By Angelic47 解密"](https://snowstar.org/2019/05/09/pyprotect-by-angelic47-decode/) article by SnowStar.
 * ["Deobfuscating Python Bytecode"](https://www.fireeye.com/blog/threat-research/2016/05/deobfuscating_python.html) article by FireEye.
