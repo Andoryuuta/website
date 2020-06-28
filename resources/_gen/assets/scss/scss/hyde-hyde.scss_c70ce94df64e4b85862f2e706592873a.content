@@ -15,7 +15,6 @@ html {
   @media (min-width: 38em) {
     html {
       font-size: 19px; } }
-
 body {
   color: #515151;
   background-color: #fff;
@@ -119,8 +118,7 @@ html {
   line-height: 1.667em;
   font-weight: 400; }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0; }
 
@@ -153,7 +151,7 @@ figure {
   margin: 0;
   padding: 0; }
 
-blockquote, .important, .warning {
+.warning, .important, blockquote {
   padding: .8889rem;
   margin-top: 1rem;
   margin-left: 0px;
@@ -292,7 +290,7 @@ a {
 .img--caption {
   font-style: italic; }
 
-.copyright, .builtwith {
+.builtwith, .copyright {
   font-size: 0.7rem;
   line-height: 1.1rem;
   text-align: center; }
@@ -546,7 +544,7 @@ a.badge-tag {
   letter-spacing: 1px;
   font-size: 1.85rem; }
 
-.project__subtitle-big, .project__subtitle-small {
+.project__subtitle-small, .project__subtitle-big {
   font-style: italic;
   color: #778492;
   display: block;
@@ -572,7 +570,7 @@ a.badge-tag {
 .row-space {
   margin-bottom: 1rem; }
 
-.col-xs-12, .col-sm-4, .col-md-4, .col-sm-8, .col-md-8 {
+.col-md-8, .col-sm-8, .col-md-4, .col-sm-4, .col-xs-12 {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
