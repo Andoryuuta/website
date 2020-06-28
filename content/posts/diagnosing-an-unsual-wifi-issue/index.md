@@ -6,7 +6,7 @@ draft: false
 ---
 
 
-# What?
+## What?
 Late last year, I started experiencing some unusual intermittent connection issues on my Desktop. In general, I had a stable connection with average latency; however, at (seemingly) random times throughout the week, I would start experiencing sudden 2000ms+ latency spikes every couple of seconds.
 
 ![Screenshot of intermittent latency spikes while pinging google.com](bad_latency_ping_screenshot.png)
@@ -17,8 +17,7 @@ This issue appeared to line up with my cross-country move from Washington State 
 
 Over the past couple of months I have (slowly) tried to figure out why this was happening, with little luck until today.
 
-# Why?
-
+## Why?
 Initially, the only thing that was clear about the issue was that it was limited to my desktop computer **only**. My laptop and other devices connected to the wifi did not have this issue, even when placed in the exact same spot as the desktop.
 
 First, I purchased a new, highly-reviewed, wifi adapter on Amazon. It didn't resolve the issue. It did, however, come with an offer for a free 64GB flash drive in exchange for a good reviews.
@@ -69,7 +68,7 @@ Then I ran MediBang Paint Pro.
 
 ![another ping lag spike](another_lag_spike.png)
 
-# WHY!?
+## Why!?
 
 Why the hell would digital painting software cause wifi lag spikes?
 
@@ -103,11 +102,11 @@ I suppose the workaround is simple enough, set the environment variable `QT_BEAR
 
 I just wish I knew that around 8 months ago.
 
-# TL;DR
+## TL;DR
 
 Qt5 has been crippling my wifi system-wide for past 7-8 months, just by running MediBang Paint Pro. I stupidly attributed it to many other things, because, honestly, who would expect Qt to be the cause of their system-wide wifi problems?
 
-# Related
+## Related
 
 * https://invent.kde.org/graphics/krita/-/commit/d4eaaa63af8dc769acf79cd497e741f1de9be31b
 * https://github.com/sqlitebrowser/sqlitebrowser/issues/1209
