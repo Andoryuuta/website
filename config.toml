@@ -1,44 +1,18 @@
-baseURL = "http://andoryuuta.github.io/"
+baseURL = "http://ando.fyi/"
 languageCode = "en-us"
+title = "Andrew's Blog"
 
-title = "Ando's thoughts"
-theme = "hyde-hyde"
-
-summarylength = 0
-
-## Site Settings
-[params]
-	author = "Andrew Gutekanst"
-	authorimage = "/img/avatar.png"
-	copyright = "Andrew Gutekanst"
-	license = "CC BY-SA 4.0"
-    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
-    showBuiltWith = true
-
-	highlightjs = true
-	highlightjsstyle = "github"
-	highlightjslanguages = ["x86asm", "python"]
-
-	toc = "hugo"
-
-## Social Accounts
-[params.social]
-	twitter = "AndoryuuRE"
-	github = "Andoryuuta"
-
-## Main Menu
-[[menu.main]]
-    name = "Posts"
-    weight = 100
-    identifier = "posts"
-    url = "/posts/"
-[[menu.main]]
-    name = "Portfolio"
-    identifier = "portfolio"
-    weight = 200
-    url = "/portfolio/"
-[[menu.main]]
-    name = "About"
-    identifier = "about"
-    weight = 300
-    url = "/about/"
+theme = "ancri"
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+    [[menu.main]]
+        name = "Blog"
+        url = "/blog/"
+        weight = 2
+    [[menu.main]]
+        name = "About"
+        url = "/about/"
+        weight = 3
