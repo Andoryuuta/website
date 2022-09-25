@@ -10,7 +10,7 @@ draft: true
 For identification purposes, the observed files/payloads and their hashes are listed below.
 
 | Filename                  | SHA256                                                           |
-|---------------------------|------------------------------------------------------------------|
+| ------------------------- | ---------------------------------------------------------------- |
 | The Hitchhiker's Hack.zip | E0DF57A03B7B6285A2F1B88BAD66CE9FC39B20140A8BA211A5DD966F3BE9CB90 |
 | The Hitchhiker's Hack.exe | 40F0377678702CC90A08AF9CDA27573955B028EF584505D1C4DC8C89D98D1F06 |
 | HackLoader.dll            | 1A8AA80396ABBF481F26B9D0DCE12DBA13A5EAF1E851A9AE73B64F4FC3236044 |
@@ -33,8 +33,6 @@ The zip appears to contain two binaries, `The Hitchhiker's Hack.exe` and `HackLo
 
 ![file in zip](zip_files.png)
 
-However, u
-
-pon taking a look at both files in a hex editor, it becomes apparent that the `HackLoader.dll` doesn't have a valid PE header:
+However, upon taking a look at both files in a hex editor, it becomes apparent that the `HackLoader.dll` doesn't have a valid PE header:
 
 ![files in hex editor](dropper_hxd.png)
