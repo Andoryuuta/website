@@ -12,3 +12,5 @@ I'm interested in a bit of everything, but primarily focused towards reverse-eng
 * Email: `"{firstname}.{lastname}@gmail.com"`
     * Or as [Unicode confusables](https://util.unicode.org/UnicodeJsps/confusables.jsp): `ɑոԁrеɯ.ɡυtekɑոѕt@ɡmɑil.com`
     * **Retype this email address manually. Don't copy+paste!**
+
+Please note that everything on this site is my own personal opinion, and not necessarily representative of my employer.
