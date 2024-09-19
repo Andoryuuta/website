@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    /* font-family: 'Lato', consolas; */
+    font-family: 'Lato', consolas;
+}
+
+html, body {
+    height: 100%;
+    background-color: #F0F0F0;
+}
+
+a {
+    text-decoration: none;
+    color:#258ed9;
+}
+
+
+.header-container *,
+.menu-container *,
+.list-post *,
+.post-header *,
+.post-tags *
+{
+    margin: 0;
+    padding: 0;
+}
+
+.header-container a,
+.list-post a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.header-container {
+    display:flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.header-container div {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.header-image {
+    border-radius: 50%;
+    width:250px;
+}
+
+.menu-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.menu-container ul li {
+    float: left;
+    display: block;
+    padding: 8px;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+}
+
+/* Left-based spacing between menu buttons, exclude first of type */
+.menu-container ul li:not(:first-of-type) {
+    margin-left: 20px;
+}
+
+.menu-container ul li a{
+    text-decoration: none;
+    background-color: inherit;
+    color: inherit;
+}
+
+.menu-container ul li:hover{
+    background-color: #D2D2D2;
+}
+
+.column-centered {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.user-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) {
+    .user-content-container {
+        /*TODO(Andoryuuta): Why does this change the size?*/
+        align-items: unset;
+    }
+}
+
+.user-content {
+    width: 56vw;
+    /* margin: 2rem 30rem; */
+    padding: 1rem 5rem;
+    max-width: 40rem;
+    /* background-color: #E8E8E8; */
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 8rem;
+}
+
+.user-content hr {
+    width: 100%;
+    border-style: dashed;
+    border-color: #a09f9f;
+}
+
+.user-content img {
+    width:100%
+}
+
+.user-content h1 {
+    font-size: 2.4rem;
+}
+
+.user-content h2 {
+    font-size: 2.2rem;
+}
+
+.user-content h3 {
+    font-size: 2rem;
+}
+
+.user-content h4 {
+    font-size: 1.8rem;
+}
+
+.user-content code {
+    font-family: consolas !important;
+    font-size: initial;
+}
+
+.user-content code:not([class]) {
+    background-color: #E6E6E6;
+    display: inline-block;
+}
+
+.user-content p, .user-content li{
+    /* Color taken from the hugo hyde theme*/
+    color: #515151;
+}
+
+.list-post {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.list-post:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.list-post-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px) {
+    .list-post-header {
+        flex-direction: column;
+    }
+    .list-post-datetime {
+        margin-top: 0.5rem;
+    }
+    .user-content {
+        width: auto;
+        max-width: none;
+        padding: 0rem 1.2rem;
+        margin: .5rem;
+    }
+    .list-post-datetime {
+        font-size: 1rem;
+    }
+}
+
+.list-post-header a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.list-post-datetime {
+    /* display: inline-flex;
+    font-size: 1rem;
+    margin-top: 0.5rem; */
+    color: #605959;
+}
+
+.list-post-tags{
+    font-size: 1rem;
+    margin-top: .8rem;
+}
+
+.list-post-tag-bullet {
+    background-color: #E5E5E5;
+    padding: 4px;
+    border: none;
+    border-radius: 8px;
+    color:black;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: .1rem;
+}
+
+.list-post-summary {
+    color: #605959 !important;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.post-header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.post-title {
+    font-size:2rem;
+}
+
+.post-tags {
+    display: flex;
+    justify-content: center;
+}
+
+.post-tag-bullet {
+    background-color: #E5E5E5;
+    padding: 4px;
+    border: none;
+    border-radius: 8px;
+    margin: .1rem;
+    color:black;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: .1rem;
+}
+
+.post-datetime {
+    color: #605959;
+    margin: 1rem;
+}
+
+.user-content .highlight > pre {
+    padding: 1rem;
+    border-radius: 5px;
+}
+.user-content pre {
+    overflow: auto;
+}

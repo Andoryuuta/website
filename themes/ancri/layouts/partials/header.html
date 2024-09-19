@@ -1,0 +1,14 @@
+<div class="header-container">
+    <div>
+        <!-- Owl image/drawing from https://pixabay.com/vectors/owl-bird-branch-animals-character-4087984/ under the Pixabay license. Created by user Bellinon-->
+        <img class="header-image" src="/img/logo.png"/>
+    </div>
+</div>
+
+<div class="menu-container">
+    <ul>
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}"> {{ .Name }}</a></li>
+        {{ end }}
+    </ul>
+</div>

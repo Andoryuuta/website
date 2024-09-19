@@ -1,0 +1,8 @@
+<div class="list-post-tags">
+    {{ with .Params.tags }}
+        {{ range . }}
+            {{ $href := print (absURL "tags/") (urlize .) }}
+            <a class="list-post-tag-bullet" href="{{ $href }}">{{ . }}</a>
+        {{ end }}
+    {{ end }}
+</div>
