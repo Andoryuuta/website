@@ -1,6 +1,3 @@
 [submodule "public"]
 	path = public
 	url = https://github.com/Andoryuuta/andoryuuta.github.io
-[submodule "themes/ancri"]
-	path = themes/ancri
-	url = https://github.com/Andoryuuta/ancri.git
